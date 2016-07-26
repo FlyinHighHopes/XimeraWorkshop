@@ -1,0 +1,39 @@
+\documentclass{ximera}
+%%%
+\title{TikZ Craziness}
+\author{Robert Kelvey, robertkelvey@gmail.com}
+\input{../preamble.tex}
+\begin{document}
+
+\begin{abstract}
+    In this activity, we try out something crazy in tikZ.
+\end{abstract}
+
+\maketitle
+
+\begin{question}
+Enter the secret answer!
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[thick] (0,0) circle (0.5); 
+        \draw[thick] (0.5,0) -- (9.5,0);
+        \draw[thick] (10,0) circle (0.5);
+        \node at (2,1) {$\answer{42}$};
+        \node at (5,1) {$\answer{42}$};
+        \node at (8,1) {$\answer{42}$};
+    \end{tikzpicture}
+    
+\end{center}
+
+
+\end{question}
+
+
+
+
+
+
+
+
+\end{document}
