@@ -357,23 +357,23 @@ Fill in the truth table below using your amazing logic skillz!
 \end{prompt}
 \end{problem}
 
-Well hey that looks pretty cool. Now we will get a little tricky. Let us try to make a truth table that isn't fill in the blank, but instead gives the options as multiple choice; i.e. a `T' choice and a `F' choice.
+Well hey that looks pretty cool (but omg not in HTML my goodness). Now we will get a little tricky. Let us try to make a truth table that isn't fill in the blank, but instead gives the options as multiple choice; i.e. a `T' choice and a `F' choice. To make this work, we will need a drop-down menu. This is possible using the ``wordChoice" command. However, this is text only. But that is fine for our True/False purposes.
 
 \begin{problem}
 Fill in the truth table below using your amazing logic skillz!
 
-%\begin{prompt}
-%\begin{center}
-%\begin{tabular}{c | c | c | c }
-%		$p$ & $q$ & $p \implies q$ & $p \vee (p \implies q)$ \\
-%		\hline
-%		T & T & T & \begin{multipleChoice} \choice[correct]{T} \choice{F} \end{multipleChoice} \\
-%		T & F & F & \begin{multipleChoice} \choice[correct]{T} \choice{F} \end{multipleChoice} \\
-%		F & T & T & \begin{multipleChoice} \choice[correct]{T} \choice{F} \end{multipleChoice}\\
-%		F & F & T & \begin{multipleChoice} \choice[correct]{T} \choice{F} \end{multipleChoice}
-%	\end{tabular}
-%\end{center}
-%\end{prompt}
+\begin{prompt}
+\begin{center}
+\begin{tabular}{c | c | c | c }
+		$p$ & $q$ & $p \implies q$ & $p \vee (p \implies q)$ \\
+		\hline
+		T & T & T & \wordChoice{\choice[correct]{T} \choice{F}} \\
+		T & F & F & \wordChoice{\choice[correct]{T} \choice{F}} \\
+		F & T & T & \wordChoice{\choice[correct]{T} \choice{F}} \\
+		F & F & T & \wordChoice{\choice[correct]{T} \choice{F}}
+	\end{tabular}
+\end{center}
+\end{prompt}
 \end{problem}
 
 
