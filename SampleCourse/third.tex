@@ -1,0 +1,44 @@
+\documentclass{ximera}
+\title{Predicate Logic}
+\author{Robert Kelvey, robertkelvey@gmail.com}
+
+\begin{document}
+    \begin{abstract}
+        Questions regarding predicate logic.
+    \end{abstract}
+\maketitle
+
+\begin{question}
+    Let us consider all objects $x$ to be integers for this question. If $P(x)$ is the statement ``$x$ is prime" and $Q(x)$ is the statement ``$x$ is even", what is the English sentence corresponding to
+    \[
+        (\forall x)(P(x) \vee Q(x)) ?
+    \]
+    \begin{freeResponse}
+        Answers may vary.
+    \end{freeResponse}
+           
+    
+    \begin{question}
+        Is the above statement true?
+        \begin{multipleChoice}
+            \choice{Yes}
+            \choice[correct]{No}
+        \end{multipleChoice}
+        \begin{feedback}
+            For any integer $x$, $x$ is prime or $x$ is even. What about if $x=9$? Is this a prime number? Is it even?
+        \end{feedback}
+    \end{question}
+    
+\end{question}
+
+\begin{question}
+    Suppose we know $p$ is false, $q$ is true, and r is false. Determine the truth value of the given proposition:
+    \begin{enumerate}
+        \item $(p \wedge q) \vee r$ $\answer{F}$
+        \item $(q \vee r) \vee ( \sim r \wedge p)$ $\answer{T}$
+        \item $((q \vee p) \wedge r) \vee q$ $\answer{T}$
+    \end{enumerate}
+\end{question}
+
+
+\end{document}
