@@ -376,6 +376,48 @@ Fill in the truth table below using your amazing logic skillz!
 \end{prompt}
 \end{problem}
 
+But man tabular is not really working out. Let us retry the first truth table using an array?
+
+\begin{problem}
+Fill in the truth table below using your amazing logic skillz!
+
+\begin{prompt}
+\begin{center}
+\[
+\begin{array}{c|c|c|c}
+		p & q & p \implies q & p \vee (p \implies q) \\
+		\hline
+		T & T & T & \answer{T} \\
+		T & F & F & \answer{T} \\
+		F & T & T & \answer{T} \\
+		F & F & T & \answer{T}
+	\end{array}
+    \]
+\end{center}
+\end{prompt}
+\end{problem}
+
+Let us also try out array using the wordChoice command (we must use a text command to trap it into a text mode inside the math mode though).
+
+
+\begin{problem}
+Fill in the truth table below using your amazing logic skillz!
+
+\begin{prompt}
+\begin{center}
+\[
+\begin{array}{c|c|c|c}
+		p & q & p \implies q & p \vee (p \implies q) \\
+		\hline
+		T & T & T & \text{\wordChoice{\choice[correct]{T} \choice{F}}} \\
+		T & F & F & \text{\wordChoice{\choice[correct]{T} \choice{F}}} \\
+		F & T & T & \text{\wordChoice{\choice[correct]{T} \choice{F}}} \\
+		F & F & T & \text{\wordChoice{\choice[correct]{T} \choice{F}}}
+	\end{array}
+    \]
+\end{center}
+\end{prompt}
+\end{problem}
 
 
 \end{document}
