@@ -397,6 +397,9 @@ Fill in the truth table below using your amazing logic skillz!
 \end{prompt}
 \end{problem}
 
+It worked!!!!!!!!!
+
+
 Let us also try out array using the wordChoice command (we must use a text command to trap it into a text mode inside the math mode though).
 
 
@@ -418,6 +421,18 @@ Fill in the truth table below using your amazing logic skillz!
 \end{center}
 \end{prompt}
 \end{problem}
+
+Well...that does not work in the HTML.
+
+\section{What have we learned here?}
+    Let us take a moment to reflect on our above attempts to create Ximera content. 
+    
+    Firstly, we have that there is a BIG difference between the PDF output and the HTML output (this is to be expected). Second, don't bother with enumerating little items in a question, and don't use mutlicols. Really - don't use multicols. It can look decent in the pdf, but HTML it will never work properly.
+    
+Lastly, we have discovered that tabular will not do all the things that we want. Tabular will work best when one has one or two columns (I believe - there are some examples in the mooculus/calculus1 book). To make something like a truth table with answer boxes, we must use \begin{verbatim} \begin{array} \end{verbatim} (note this is a math-mode environment, which seems to be the reason this is working!). 
+
+
+
 
 
 \end{document}
