@@ -16,7 +16,7 @@ We have some nice examples of Desmos functionality \link[here]{http://ximera.osu
 Let us try the fun Taylor polynomial of sine example.
 
 \[
-    \graph[panel, projectorMode]{y=\sin x, y=\sum _{n=0}^a\frac{(-1)^n x^{2n+1}}{(2n+1)!}, a=1}
+    \graph[panel, projectorMode, xmin=-20, xmax=20, ymin=-8, ymax=8]{y=\sin x, y=\sum _{n=0}^a\frac{(-1)^n x^{2n+1}}{(2n+1)!}, a=1}
 \]
 
 If my projectorMode pull request gets merged, then the above should be in projectorMode...
@@ -29,17 +29,17 @@ Piecewise Function?
 %\]
 
 \[
-    \graph{ x^2\left\{-2 < x < 1 \right\}, x^3 \left\{1<x<5\right\}}
+    \graph[panel,xmin=-5, xmax=5, ymin=-5, ymax=10]{ x^2\left\{-2 < x < 1 \right\}, x^3 \left\{1<x<5\right\}}
 \]
 
 \[
-    \graph{ \sin(x)\left\{x<0\right\}, 2x\left\{ x>=0 \right\} }
+    \graph[panel,xmin=-5, xmax=5, ymin=-2, ymax=6]{ \sin(x)\left\{x<0\right\}, 2x\left\{ x>=0 \right\} }
 \]
 
 Example from \link[Calculus1]{http://ximera.osu.edu/course/mooculus/calculus1/master/continuity/digInContinuityOfPiecewiseFunctions}:
 
 \[
-       \graph{ x+4\left\{x<1\right\}, x^2+2x+2\left\{1<= x < 3\right\}, 6x-2\left\{x>=3\right\} }
+       \graph[xmin=-10, xmax=10, ymin=-5, ymax=25]{ x+4\left\{x<1\right\}, x^2+2x+2\left\{1<= x < 3\right\}, 6x-2\left\{x>=3\right\} }
 \]
 
 
